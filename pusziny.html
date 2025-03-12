@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+  <title>Pusheen Gallery</title>
+</head>
+<body>
+  <header>
+    <h1>Pusheen Gallery</h1>
+  </header>
+  <main class="gallery">
+    <div class="gallery-item"><img src="" alt="pusheen1"></div>
+    <div class="gallery-item"><img src="" alt="pusheen2"></div>
+    <div class="gallery-item"><img src="" alt="pusheen3"></div>
+    <div class="gallery-item"><img src="" alt="pusheen4"></div>
+    <div class="gallery-item"><img src="" alt="pusheen5"></div>
+    <div class="gallery-item"><img src="" alt="pusheen6"></div>
+    <div class="gallery-item"><img src="" alt="pusheen7"></div>
+    <div class="gallery-item"><img src="" alt="pusheen8"></div>
+    <div class="gallery-item"><img src="" alt="pusheen9"></div>
+    <div class="gallery-item"><img src="" alt="pusheen10"></div>
+    <style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 650px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  }
+  </style>
+  </div>
+</body>
+</html>
